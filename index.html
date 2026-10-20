@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimeLine — Plan Your Long-Term Goals</title>
+    <meta
+      name="description"
+      content="Describe your long-term goal, get a personalized roadmap in seconds. One timeline. Every milestone. Every task."
+    />
+    <meta property="og:title" content="TimeLine — Plan Your Long-Term Goals" />
+    <meta
+      property="og:description"
+      content="Describe your long-term goal, get a personalized roadmap in seconds."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav id="navbar" aria-label="Main navigation">
+        <div class="container nav-inner">
+          <a class="brand" href="#top" aria-label="TimeLine home">
+            <img src="assets/images/TimeLineLogo1.svg" alt="TimeLine" height="20" />
+          </a>
+
+          <div class="nav-links" aria-label="Page sections">
+            <a href="#about">About</a>
+            <a href="#use-cases">Use Cases</a>
+            <a href="#download">Download</a>
+          </div>
+
+          <a
+            class="nav-cta"
+            href="https://timelinepremvp0.vercel.app"
+            target="_blank"
+            rel="noopener"
+          >
+            Download
+          </a>
+
+          <button
+            class="hamburger"
+            id="hamburger"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="mobile-nav" id="mobile-nav">
+          <a href="#about">About</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#download">Download</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section id="hero" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy fade-in">
+            <p class="eyebrow accent">GOAL PLANNING, REIMAGINED</p>
+            <h1>
+              A Platform Helping You Plan Your Long-Term Goals that Span Months or
+              Years, as Easy as Planning for Tomorrow
+            </h1>
+            <p class="hero-subtext">
+              Describe your long-term goal in a prompt, get a personalized roadmap in
+              seconds. One timeline. One view. Every milestone. Every task. Displaying
+              exactly what you need to do next.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="https://timelinepremvp0.vercel.app"
+                target="_blank"
+                rel="noopener"
+              >
+                Get Started Free
+              </a>
+              <a class="btn btn-outline" href="#how-it-works">See How It Works</a>
+            </div>
+
+            <div class="social-proof" aria-label="Community size">
+              <div class="avatar-stack" aria-hidden="true">
+                <span class="avatar avatar-one"></span>
+                <span class="avatar avatar-two"></span>
+                <span class="avatar avatar-three"></span>
+                <span class="avatar avatar-four"></span>
+                <span class="avatar avatar-five"></span>
+              </div>
+              <span>2,314 people joined</span>
+            </div>
+          </div>
+
+          <div class="hero-visual fade-in">
+            <img src="assets/images/HeroSection.svg" alt="" class="hero-svg" />
+            <p class="hero-subtitle">DESIGN YOUR FUTURE</p>
+            <span class="hero-dot dot-1"></span>
+            <span class="hero-dot dot-2"></span>
+            <span class="hero-dot dot-3"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="signup-bar">
+        <div class="container signup-layout">
+          <div class="signup-text">
+            <h3>Achieve Your Goals Today</h3>
+            <p>Join thousands already planning smarter with TimeLine.</p>
+          </div>
+
+          <div class="input-group">
+            <input type="email" placeholder="Enter your email address" aria-label="Email address" />
+            <button type="button">Download Now</button>
+          </div>
+
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="X">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.934l4.262 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="problem-section">
+        <div class="container problem-container fade-in">
+          <h2>
+            Most Goals Don't Fail Because of Lack of Effort.<br />
+            They Fail Because You Don't Know Where to Start.
+          </h2>
+          <div class="problem-body">
+            <p>
+              The problem isn't motivation. It's structure. When a goal spans months
+              or years, it becomes invisible — too abstract to act on today. You know
+              where you want to end up, but not what to do Monday morning.
+            </p>
+            <p>
+              TimeLine solves this by breaking every long-term goal into a clear
+              sequence of milestones and tasks — generated in seconds by AI, organized
+              into a single view so you always know exactly what comes next.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="how-section">
+        <div class="container">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>From Scattered Idea to Finished Goal in 3 Steps</h2>
+
+          <div class="steps-layout">
+            <div class="steps-column fade-in">
+              <div class="step">
+                <div class="step-header">
+                  <div class="step-number">01</div>
+                  <div class="step-content">
+                    <h4>Tell TimeLine your goal and your timeframe</h4>
+                    <p>
+                      Type your goal in plain language — learn Spanish, launch a product,
+                      get promoted. Add how long you have. That's all.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-connector"></div>
+
+              <div class="step">
+                <div class="step-header">
+                  <div class="step-number">02</div>
+                  <div class="step-content">
+                    <h4>Get an AI-generated TimeLine broken down into milestones and tasks</h4>
+                    <p>
+                      Instantly receive a structured roadmap organized by months and weeks.
+                      Milestones mark your progress checkpoints; tasks tell you exactly
+                      what to do each day.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-connector"></div>
+
+              <div class="step">
+                <div class="step-header">
+                  <div class="step-number">03</div>
+                  <div class="step-content">
+                    <h4>Follow your timeline, pivot when needed with AI and actually achieve your goal</h4>
+                    <p>
+                      Life changes — so does your plan. Ask StreamLine AI to adjust your
+                      timeline whenever you need. Stay on track without starting over.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mockup-panel fade-in">
+              <div class="mockup-card">
+                <div class="mockup-traffic-lights" aria-hidden="true">
+                  <span class="tl red"></span>
+                  <span class="tl yellow"></span>
+                  <span class="tl green"></span>
+                </div>
+
+                <div class="mockup-header">
+                  <img src="assets/images/StreamLineAILogo.svg" width="16" alt="" />
+                  <span>StreamLine AI</span>
+                </div>
+
+                <div class="workflow-visuals">
+                  <img src="assets/images/AIGeneration.png" alt="AI roadmap generation preview" />
+                  <img src="assets/images/Document.png" alt="Roadmap document preview" />
+                  <img src="assets/images/Pivot.png" alt="Plan adjustment preview" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="real-people-section">
+        <div class="container real-people-grid">
+          <div class="photo-card fade-in">
+            <img src="assets/images/PMphoto.jpg" alt="Professional planning at a desk" />
+          </div>
+
+          <div class="real-people-copy fade-in">
+            <p class="eyebrow">BUILT FOR REAL PEOPLE</p>
+            <h2>Built for Real People, Not Project Managers</h2>
+            <p>
+              You shouldn't need to understand Gantt charts, sprints, or OKRs to
+              achieve a personal goal. TimeLine is designed for students,
+              career-changers, aspiring entrepreneurs, and anyone with ambition and a
+              timeline.
+            </p>
+            <p>
+              No jargon. No complexity. Just your goal, your deadline, and a clear path
+              forward — generated for you in seconds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="use-cases" class="use-cases-section">
+        <div class="container">
+          <p class="eyebrow center">USE CASES</p>
+          <h2 class="center">One Place for Every Goal That Actually Matters</h2>
+
+          <div class="carousel-track" aria-label="Use cases carousel">
+            <article class="carousel-card card fade-in">
+              <img src="assets/images/Career.jpeg" alt="Career use case" class="card-photo" />
+              <div class="card-body">
+                <span class="card-tag">Career</span>
+                <h3>Land Your Dream Job</h3>
+                <p>
+                  Set a target role, get a week-by-week plan covering skills to learn,
+                  projects to build, and applications to send.
+                </p>
+              </div>
+            </article>
+
+            <article class="carousel-card card fade-in">
+              <img src="assets/images/Academic.jpg" alt="Academic use case" class="card-photo" />
+              <div class="card-body">
+                <span class="card-tag">Academic</span>
+                <h3>Ace the Semester</h3>
+                <p>
+                  Break down coursework, exam schedules, and research deadlines into a
+                  unified timeline so nothing sneaks up on you.
+                </p>
+              </div>
+            </article>
+
+            <article class="carousel-card card fade-in">
+              <img src="assets/images/Finance.jpg" alt="Finance use case" class="card-photo" />
+              <div class="card-body">
+                <span class="card-tag">Finance</span>
+                <h3>Hit Your Financial Milestone</h3>
+                <p>
+                  Whether saving for a house, building an emergency fund, or eliminating
+                  debt — get a month-by-month savings roadmap.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel-dots" aria-label="Carousel navigation">
+            <button class="carousel-dot active" data-index="0" type="button" aria-label="Slide 1"></button>
+            <button class="carousel-dot" data-index="1" type="button" aria-label="Slide 2"></button>
+            <button class="carousel-dot" data-index="2" type="button" aria-label="Slide 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="streamline-section">
+        <div class="container streamline-grid">
+          <div class="streamline-copy fade-in">
+            <p class="eyebrow">STREAMLINE AI</p>
+            <h2>AI That Does the Heavy Lifting</h2>
+            <p class="body-intro">
+              StreamLine AI is TimeLine's built-in intelligence layer. It generates your
+              initial roadmap and stays available throughout your journey.
+            </p>
+
+            <ul class="feature-bullets">
+              <li>
+                <div class="bullet-icon">✦</div>
+                <div>
+                  <strong>Instant Roadmap Generation</strong>
+                  <p>
+                    Describe your goal. Get a full multi-month plan with milestones and
+                    weekly tasks in seconds.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="bullet-icon">✦</div>
+                <div>
+                  <strong>Adaptive Replanning</strong>
+                  <p>
+                    Tell StreamLine what changed. It rebuilds your timeline around your
+                    current reality — no manual editing.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="bullet-icon">✦</div>
+                <div>
+                  <strong>Always-On Guidance</strong>
+                  <p>
+                    Ask questions, get suggestions, or request a progress check anytime.
+                    StreamLine knows your goal and your timeline.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="streamline-card fade-in">
+            <img src="assets/images/SprintsLogo.svg" class="card-decoration" alt="" />
+            <img src="assets/images/StreamLineAILogo.svg" alt="StreamLine AI" class="streamline-logo" />
+            <p class="streamline-label">StreamLine AI</p>
+            <p class="streamline-sublabel">Powered by advanced AI</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-summary-section">
+        <div class="container">
+          <h2 class="center summary-title">TimeLine Works For You</h2>
+
+          <div class="feature-summary-grid">
+            <div class="feature-copy fade-in">
+              <div class="feature-item">
+                <h4>One View. Every Goal.</h4>
+                <p>
+                  TimeLine puts your entire goal journey — from start date to final
+                  milestone — in a single scrollable timeline. No switching between apps,
+                  no lost context, no forgotten deadlines.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>Milestones That Actually Motivate</h4>
+                <p>
+                  Each milestone is a meaningful checkpoint — not an arbitrary date. See
+                  progress at a glance and feel the momentum of moving toward something
+                  real.
+                </p>
+              </div>
+
+              <div class="feature-item">
+                <h4>Built for Pivots</h4>
+                <p>
+                  Goals evolve. When they do, StreamLine AI regenerates the relevant
+                  sections of your plan instantly. You adapt; your timeline adapts with
+                  you.
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-visual fade-in">
+              <img src="assets/images/HeroSection.svg" alt="TimeLine timeline visual" />
+            </div>
+          </div>
+
+          <div class="feature-icons fade-in">
+            <div class="feature-icon-item">
+              <div class="icon-box">
+                <svg viewBox="0 0 76 15" aria-hidden="true">
+                  <circle cx="7.47" cy="7.47" r="7.47" />
+                  <rect x="16" y="5.5" width="13" height="3" rx="1.5" />
+                  <circle cx="38" cy="7.47" r="7.47" />
+                  <rect x="46.5" y="5.5" width="13" height="3" rx="1.5" />
+                  <circle cx="68.5" cy="7.47" r="7.47" />
+                </svg>
+              </div>
+              <span>Milestones &amp; Tasks</span>
+            </div>
+
+            <div class="feature-icon-item">
+              <div class="icon-box">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 19V5M5 12l7-7 7 7" />
+                </svg>
+              </div>
+              <span>Progression</span>
+            </div>
+
+            <div class="feature-icon-item">
+              <div class="icon-box">
+                <img src="assets/images/StreamLineAILogo.svg" alt="StreamLine AI" />
+              </div>
+              <span>StreamLine AI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-inner fade-in">
+          <h2>Achieve Your Goals Today With TimeLine</h2>
+          <p>
+            Stop wishing. Stop overwhelming yourself. Start with a clear plan —
+            generated for you in seconds.
+          </p>
+
+          <div class="input-group input-group--cta">
+            <input type="email" placeholder="Enter your email address" aria-label="Email address for free signup" />
+            <button type="button">Get Started Free</button>
+          </div>
+
+          <p class="fine-print">Free to get started. No credit card required.</p>
+        </div>
+      </section>
+
+      <section class="dot-matrix-section" aria-label="TimeLine timeline wordmark">
+        <div class="dot-matrix-wrapper">
+          <img src="assets/images/ResonanceSection.svg" alt="TIMELINE" class="dot-matrix-svg" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-branding">
+            <img src="assets/images/TimeLineLogo1.svg" alt="TimeLine" height="16" />
+            <p class="footer-tagline">Your Future Self Will Thank You</p>
+
+            <div class="input-group footer-input">
+              <input type="email" placeholder="Enter your email" aria-label="Email address for subscribe" />
+              <button type="button">Subscribe</button>
+            </div>
+
+            <img src="assets/images/SprintsLogo.svg" class="footer-decoration" alt="" />
+          </div>
+
+          <div class="footer-right">
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <circle cx="12" cy="12" r="4"/>
+                  <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                </svg>
+                <span>@timeline.app</span>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+                <span>TimeLine on LinkedIn</span>
+              </a>
+              <a href="#" class="social-link" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.934l4.262 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>@useTimeLine</span>
+              </a>
+            </div>
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+              <a href="#about">About</a>
+              <a href="#use-cases">Use Cases</a>
+              <a href="#download">Download</a>
+            </nav>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2025 TimeLine. All rights reserved.</p>
+          <div>
+            <a href="#">Privacy Policy</a>
+            <span> · </span>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
