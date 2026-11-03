@@ -93,6 +93,11 @@ img {
   margin: 0;
 }
 
+/* Decorative layers sit above some content in Figma's stacking order; they must never take clicks */
+.L.d {
+  pointer-events: none;
+}
+
 /* Children of a group are placed in the group's own coordinates */
 .group > * {
   --x: 0;
