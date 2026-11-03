@@ -13,13 +13,27 @@
       property="og:description"
       content="Describe your long-term goal, get a personalized roadmap in seconds."
     />
+    <meta property="og:type" content="website" />
+    <!-- Google tag (gtag.js), same property as TimeLine-Original-Repo. Not loaded on localhost so local testing stays out of the analytics. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      if (!/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) {
+        var gtagScript = document.createElement("script");
+        gtagScript.async = true;
+        gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=G-LJH3PSZB56";
+        document.head.appendChild(gtagScript);
+        gtag("js", new Date());
+        gtag("config", "G-LJH3PSZB56");
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Alata&family=Aldrich&family=Anta&family=Gruppo&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles-11-02.css" />
+    <link rel="stylesheet" href="styles-11-03.css" />
   </head>
   <body>
     <main id="top">
@@ -36,11 +50,21 @@
           <img src="c33da.svg" alt="" />
         </a>
 
-        <nav class="L c site-nav" aria-label="Main navigation" style="--x:1142;--y:104;--w:700">
-          <a href="#how-it-works">How It Works</a>
+        <nav class="L c site-nav" aria-label="Main navigation" style="--x:1042;--y:104;--w:800">
+          <a href="#about">About</a>
           <a href="#use-cases">Use Cases</a>
-          <a href="https://timelinepremvp0.vercel.app" target="_blank" rel="noopener">Open TimeLine <span aria-hidden="true">↗</span></a>
+          <a href="#pathfinder">Pathfinder AI</a>
+          <a href="https://app.planwithtimeline.com" target="_blank" rel="noopener noreferrer">Open TimeLine <span aria-hidden="true">↗</span></a>
+          <button id="hamburger" class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <span></span><span></span><span></span>
+          </button>
         </nav>
+        <div id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#about">About</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#pathfinder">Pathfinder AI</a>
+          <a href="https://app.planwithtimeline.com" target="_blank" rel="noopener noreferrer">Open TimeLine <span aria-hidden="true">↗</span></a>
+        </div>
 
         <h1 id="hero-title" class="L c hero-title fade" style="--x:88;--y:348;--w:813">
           Plan for Goals that <br class="br" />Span Months or Years, <br class="br" />as Easy as Planning <br class="br" />for Tomorrow
@@ -50,9 +74,9 @@
         </p>
 
         <div class="L c group hero-actions" style="--x:91;--y:777;--w:691;--h:65;--gw:691">
-          <a class="pill" href="https://timelinepremvp0.vercel.app" target="_blank" rel="noopener" style="--x:0">
+          <button class="pill" type="button" data-early-access-trigger data-source="hero" style="--x:0">
             <span class="pill-glow"></span><span class="pill-fill" style="background:rgba(59,41,255,.64)"></span><span class="pill-label">Get Early Access</span>
-          </a>
+          </button>
           <a class="pill" href="#how-it-works" style="--x:368">
             <span class="pill-glow"></span><span class="pill-fill" style="background:rgba(55,62,255,.73)"></span><span class="pill-label">How TimeLine Works</span>
           </a>
@@ -270,39 +294,107 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-copy">© <span data-year>2026</span> TimeLine. All rights reserved.</p>
+        <p class="footer-copy">© <span data-year>2026</span> TimeLine Planning Inc. All rights reserved.</p>
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#about">About</a>
           <a href="#use-cases">Use Cases</a>
-          <a href="#download">Download</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#pathfinder">Pathfinder AI</a>
+          <a href="https://app.planwithtimeline.com" target="_blank" rel="noopener noreferrer">Open TimeLine</a>
         </nav>
         <div class="footer-social" aria-label="Social media links">
-          <a href="#" aria-label="TimeLine on Instagram">
+          <a href="https://www.instagram.com/trytimeline/" target="_blank" rel="noopener noreferrer" aria-label="TimeLine on Instagram, @trytimeline">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
               <circle cx="12" cy="12" r="4" />
               <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
             </svg>
+            <span>@trytimeline</span>
           </a>
-          <a href="#" aria-label="TimeLine on LinkedIn">
+          <a href="https://www.linkedin.com/company/timeline-productivity/" target="_blank" rel="noopener noreferrer" aria-label="TimeLine on LinkedIn">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
               <circle cx="4" cy="4" r="2" />
             </svg>
+            <span>TimeLine</span>
           </a>
-          <a href="#" aria-label="TimeLine on X">
+          <a href="https://x.com/planwtimeline" target="_blank" rel="noopener noreferrer" aria-label="TimeLine on X, @planwtimeline">
             <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L2.25 2.25h6.934l4.262 5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
             </svg>
+            <span>@planwtimeline</span>
           </a>
         </div>
       </div>
     </footer>
 
+    <!-- Early access modal (questions and values from TimeLine-Original-Repo) -->
+    <div id="early-access-modal" class="modal-shell" aria-hidden="true">
+      <div class="modal-backdrop" data-modal-close></div>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="early-access-title">
+        <button class="modal-close" type="button" aria-label="Close early access form" data-modal-close>×</button>
+        <img src="9ff82.svg" alt="TimeLine" width="98" height="19" class="modal-logo" />
+        <p class="modal-eyebrow">Reserve Early Access</p>
+        <h2 id="early-access-title">Help Us Shape TimeLine</h2>
+        <p class="modal-subtext">Share a little about how you plan long-term goals. Your responses help us build a better beta experience.</p>
+
+        <form id="early-access-form" class="early-access-form" novalidate>
+          <input class="honeypot" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <label class="modal-field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="you@email.com" autocomplete="email" required />
+          </label>
+
+          <fieldset class="modal-fieldset">
+            <legend>Goal type</legend>
+            <p class="select-value" data-select-value></p>
+            <div class="select-row" data-choice-select>
+              <button type="button" class="select-pill" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose goal type"></button>
+              <div class="select-menu" role="listbox">
+                <label role="option"><input type="radio" name="goalType" value="academic" required /><span>Academic</span></label>
+                <label role="option"><input type="radio" name="goalType" value="career" /><span>Career</span></label>
+                <label role="option"><input type="radio" name="goalType" value="finance" /><span>Finance</span></label>
+                <label role="option"><input type="radio" name="goalType" value="health" /><span>Health</span></label>
+                <label role="option"><input type="radio" name="goalType" value="personal" /><span>Personal</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="modal-fieldset">
+            <legend>Type of user</legend>
+            <p class="select-value" data-select-value></p>
+            <div class="select-row" data-choice-select>
+              <button type="button" class="select-pill" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose type of user"></button>
+              <div class="select-menu" role="listbox">
+                <label role="option"><input type="radio" name="userType" value="student" required /><span>Student</span></label>
+                <label role="option"><input type="radio" name="userType" value="young-adult" /><span>Young Adult</span></label>
+                <label role="option"><input type="radio" name="userType" value="career-builder" /><span>Career Builder</span></label>
+                <label role="option"><input type="radio" name="userType" value="founder" /><span>Founder</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="modal-fieldset">
+            <legend>Biggest long-term planning problem</legend>
+            <p class="select-value" data-select-value></p>
+            <div class="select-row" data-choice-select>
+              <button type="button" class="select-pill" aria-haspopup="listbox" aria-expanded="false" aria-label="Choose biggest planning problem"></button>
+              <div class="select-menu" role="listbox">
+                <label role="option"><input type="radio" name="planningProblem" value="getting-started" required /><span>Getting Started</span></label>
+                <label role="option"><input type="radio" name="planningProblem" value="staying-consistent" /><span>Staying Consistent</span></label>
+                <label role="option"><input type="radio" name="planningProblem" value="motivation" /><span>Motivation</span></label>
+                <label role="option"><input type="radio" name="planningProblem" value="tracking-progress" /><span>Keeping Track of Progress</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="modal-error" id="early-access-error" aria-live="polite"></p>
+          <button type="submit" class="modal-submit btn-glow">Reserve Early Access</button>
+        </form>
+      </div>
+    </div>
+
     <script src="pattern-refraction-11-02.js"></script>
     <script src="shader-effect-11-02.js"></script>
-    <script src="script-11-02.js"></script>
+    <script src="script-11-03.js"></script>
   </body>
 </html>
